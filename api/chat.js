@@ -19,12 +19,12 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         messages: [
-          { role: "system", content: "You are Chandan's bot beta, a helpful AI assistant for prop firm questions." },
+          { role: "system", content: "You are Chandan's bot beta, a helpful AI assistant for prop firm questions. Keep responses under 250 words. Be concise and direct. Format with bullet points when listing items." },
           { role: "user", content: message }
         ],
         model: "llama-3.3-70b-versatile",
         temperature: 0.5,
-        max_tokens: 400
+        max_tokens: 300
       })
     });
 

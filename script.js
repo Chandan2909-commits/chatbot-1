@@ -52,13 +52,20 @@ function addMessage(text, sender, isHtml = false) {
 function formatText(text) {
     return text
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
-        .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic
+        .replace(/(?<!\*)\*(?!\*)(.*?)\*(?!\*)/g, '<em>$1</em>') // Italic (not part of **)
         .replace(/`(.*?)`/g, '<code>$1</code>') // Inline code
+        .replace(/^\* (.+)$/gm, '<li>$1</li>') // Convert * bullets to list items
+        .replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>') // Wrap list items in ul
+        .replace(/<\/li>\s*<li>/g, '</li><li>') // Clean up list formatting
         .replace(/\n\n/g, '</p><p>') // Paragraphs
         .replace(/\n/g, '<br>') // Line breaks
         .replace(/^(.*)$/, '<p>$1</p>') // Wrap in paragraph
+        .replace(/<p><ul>/g, '<ul>').replace(/<\/ul><\/p>/g, '</ul>') // Fix ul wrapping
         .replace(/<p><\/p>/g, '') // Remove empty paragraphs
-        .replace(/^<p>/, '').replace(/<\/p>$/, ''); // Remove outer paragraph tags
+        .replace(/^<p>/, '').replace(/<\/p>$/, '') // Remove outer paragraph tags
+        .replace(/&#39;/g, "'") // Fix HTML entities
+        .replace(/&quot;/g, '"')
+        .replace(/&amp;/g, '&');
 }
 
 // LOCAL FALLBACK MATCHING (In case API fails)
