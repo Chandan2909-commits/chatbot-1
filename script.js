@@ -20,17 +20,20 @@ const chatInput = document.querySelector('.chat-input-area input');
 const sendBtn = document.querySelector('.send-btn');
 const statusText = document.querySelector('.status-text');
 
-// Helper to add message
+// Helper to add message with formatting
 function addMessage(text, sender, isHtml = false) {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', sender === 'bot' ? 'bot-message' : 'user-message');
 
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('message-content');
+    
     if (isHtml) {
         contentDiv.innerHTML = text;
     } else {
-        contentDiv.textContent = text;
+        // Format text for better display
+        const formattedText = formatText(text);
+        contentDiv.innerHTML = formattedText;
     }
 
     const timeDiv = document.createElement('div');
@@ -43,6 +46,19 @@ function addMessage(text, sender, isHtml = false) {
 
     // Scroll to bottom
     chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Format text for better display
+function formatText(text) {
+    return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+        .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic
+        .replace(/`(.*?)`/g, '<code>$1</code>') // Inline code
+        .replace(/\n\n/g, '</p><p>') // Paragraphs
+        .replace(/\n/g, '<br>') // Line breaks
+        .replace(/^(.*)$/, '<p>$1</p>') // Wrap in paragraph
+        .replace(/<p><\/p>/g, '') // Remove empty paragraphs
+        .replace(/^<p>/, '').replace(/<\/p>$/, ''); // Remove outer paragraph tags
 }
 
 // LOCAL FALLBACK MATCHING (In case API fails)
@@ -174,7 +190,12 @@ async function handleUserMessage() {
     // Remove loading message
     loadingDiv.remove();
 
-    addMessage(responseText, 'bot', true);
+    addMessage(responseText, 'bot');
+
+    // Show default message after bot response
+    setTimeout(() => {
+        showDefaultMessage();
+    }, 1500);
 
     // Satisfaction Check Logic
     if (state.turn_count >= 3 && !state.satisfaction_asked) {
@@ -245,6 +266,20 @@ const SUGGESTED_QUESTIONS = [
     "Drawdown rules",
     "Profit split"
 ];
+
+function showDefaultMessage() {
+    const defaultMsg = `Is there anything else you'd like to know about prop firm rules, challenges, or payouts?`;
+    
+    const suggestionsHtml = `
+        <div class="suggestion-container">
+            ${SUGGESTED_QUESTIONS.map(q =>
+        `<button onclick="handleSuggestion('${q}')" class="suggestion-chip">${q}</button>`
+    ).join('')}
+        </div>
+    `;
+    
+    addMessage(defaultMsg + suggestionsHtml, 'bot', true);
+}
 
 function showWelcomeMessage() {
     const welcomeMsg = `Hello! I'm your Intelligent Assistant. I can explain rules, challenges, risk limits, payouts, and operational policies. How can I help you today?`;
