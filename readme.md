@@ -10,7 +10,7 @@ A customer-facing chatbot for proprietary trading firms that explains rules, cha
 - Escalation to customer care when needed
 - Secure API key management
 
-## Setup
+## Local Development
 
 1. Clone the repository:
 ```bash
@@ -30,15 +30,25 @@ const GROQ_API_KEY = "your_actual_groq_api_key_here";
 
 4. Open `index.html` in your browser or serve it using a local server.
 
+## Vercel Deployment
+
+1. Fork this repository
+2. Connect your GitHub account to Vercel
+3. Import this project to Vercel
+4. Add environment variable:
+   - Key: `GROQ_API_KEY`
+   - Value: Your actual Groq API key
+5. Deploy!
+
+## Environment Variables
+
+- `GROQ_API_KEY`: Your Groq API key (required for production)
+
 ## Security
 
 - Never commit your `config.js` file (it's already in `.gitignore`)
-- The `config.example.js` shows the required format without exposing keys
-- Always use the example file as a template for new deployments
-
-## Deployment
-
-For production deployment, ensure your hosting platform supports environment variables and update the code to use them instead of the config file.
+- For production, API keys are handled via environment variables
+- The `config.example.js` shows the required format for local development
 
 ## License
 

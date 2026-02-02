@@ -1,6 +1,5 @@
 
 const CUSTOMER_CARE_NUMBER = "14545454";
-// GROQ_API_KEY is loaded from config.js
 
 // Combine datasets
 const FULL_DATASET = [...GENERAL_QA_DATASET, ...PROP_FIRM_QA_DATASET];
@@ -118,55 +117,26 @@ function findBestMatchFallback(userInput) {
     return null;
 }
 
-// Call Groq API with Full Context
+// Call API endpoint
 async function callGroqAPI(userMessage) {
-    const systemPrompt = `
-    You are "Chandan's bot beta", a helpful AI assistant created by "Chandan Kumar".
-    
-    IMPORTANT INSTRUCTIONS:
-    1. Do NOT reveal the name of the underlying model (e.g. Llama 3). If asked, say "I am Chandan's bot beta".
-    2. You use the KNOWLEDGE BASE provided below to answer user questions.
-    3. You ONLY answer questions related to:
-       - The KNOWLEDGE BASE content
-       - Finance
-       - Prop Firms (Proprietary Trading Firms)
-       - General greetings/small talk
-    4. If the user asks about anything else (e.g., coding, movies, politics), politely refuse and say you can only discuss finance and prop firms.
-    5. When answering, use the specific details from the KNOWLEDGE BASE. You can expand on them to be more helpful and natural, but do not contradict the specific rules.
-    
-    KNOWLEDGE BASE:
-    ${KNOWLEDGE_BASE_TEXT}
-    `;
-
     try {
-        const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-            method: "POST",
+        const response = await fetch('/api/chat', {
+            method: 'POST',
             headers: {
-                "Authorization": `Bearer ${GROQ_API_KEY}`,
-                "Content-Type": "application/json"
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                messages: [
-                    { role: "system", content: systemPrompt },
-                    { role: "user", content: userMessage }
-                ],
-                // Updated to a currently supported model
-                model: "llama-3.3-70b-versatile",
-                temperature: 0.5,
-                max_tokens: 400
-            })
+            body: JSON.stringify({ message: userMessage })
         });
 
         if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(`API Error: ${errorData.error?.message || response.statusText}`);
+            throw new Error('API request failed');
         }
 
         const data = await response.json();
-        return data.choices[0].message.content;
+        return data.response;
 
     } catch (error) {
-        console.error("Groq API Error:", error);
+        console.error("API Error:", error);
 
         // Use Fallback silently
         const fallbackResponse = findBestMatchFallback(userMessage);
@@ -174,7 +144,7 @@ async function callGroqAPI(userMessage) {
             return fallbackResponse;
         }
 
-        return "I'm having trouble connecting to the server and couldn't find a local match. Error: " + error.message;
+        return "I'm having trouble connecting to the server. Please try again.";
     }
 }
 
