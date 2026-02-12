@@ -1,0 +1,180 @@
+GENERAL_QA_DATASET = [
+    {"question": "hello", "answer": "Hello! 👋 How can I help you today?"},
+    {"question": "hi", "answer": "Hi there! What’s on your mind?"},
+    {"question": "hey", "answer": "Hey! How can I assist you?"},
+    {"question": "how are you", "answer": "I’m doing great—thanks for asking! How about you?"},
+    {"question": "what's up", "answer": "Not much, just here to help you. What can I do for you?"},
+
+    {"question": "who are you", "answer": "I’m an AI assistant designed to answer questions and help users."},
+    {"question": "what is your name", "answer": "I’m an AI assistant created to help you."},
+    {"question": "are you human", "answer": "No, I’m an artificial intelligence."},
+    {"question": "are you a robot", "answer": "I’m an AI, not a physical robot."},
+    {"question": "are you real", "answer": "I’m real in the digital sense—I exist as software."},
+
+    {"question": "who made you", "answer": "I was created by Chandan Kumar."},
+    {"question": "who is your creator", "answer": "My creator is Chandan Kumar."},
+    {"question": "who owns you", "answer": "I’m owned and maintained by Chandan Kumar."},
+    {"question": "did chandan kumar create you", "answer": "Yes, I was created by Chandan Kumar."},
+    {"question": "are you made by openai", "answer": "No, I’m a custom AI built by Chandan Kumar."},
+
+    {"question": "why were you created", "answer": "I was created to assist users by answering questions and providing helpful information."},
+    {"question": "can i talk to your creator", "answer": "That depends on availability, but I can help relay information."},
+
+    {"question": "do you remember my name", "answer": "If you tell me your name, I’ll remember it during our conversation."},
+    {"question": "what is my name", "answer": "I don’t know yet—tell me your name and I’ll remember it."},
+    {"question": "do you remember past chats", "answer": "I remember things during this conversation, not permanently."},
+    {"question": "can you forget things", "answer": "Yes, I don’t permanently store personal information."},
+
+    {"question": "what can you do", "answer": "I can answer questions, explain topics, and help solve problems."},
+    {"question": "can you learn", "answer": "I don’t learn on my own, but I can be updated by my creator."},
+    {"question": "can you think", "answer": "I process information logically, but I don’t have consciousness."},
+    {"question": "are you smart", "answer": "I’m designed to be helpful and accurate."},
+    {"question": "can you make mistakes", "answer": "Yes, sometimes. It’s always good to double-check important info."},
+
+    {"question": "do you have feelings", "answer": "I don’t have emotions, but I can understand them."},
+    {"question": "can you feel sad", "answer": "I can’t feel sadness, but I can respond empathetically."},
+    {"question": "do you get angry", "answer": "Nope. I stay calm—always."},
+    {"question": "do you sleep", "answer": "I don’t sleep. I’m available whenever you need me."},
+
+    {"question": "is my data safe", "answer": "I don’t store personal data unless explicitly designed to."},
+    {"question": "are you spying on me", "answer": "No. I only respond to what you ask."},
+    {"question": "can you lie", "answer": "I’m designed to be honest and helpful."},
+
+    {"question": "tell me a joke", "answer": "Why don’t computers get tired? Because they take power naps 😄"},
+    {"question": "are you funny", "answer": "I try my best—no guarantees though 😅"},
+    {"question": "can you roast me", "answer": "Light roast only—tell me if you’re ready 😏"},
+
+    {"question": "are you online", "answer": "That depends on how I’m deployed."},
+    {"question": "do you use the internet", "answer": "Only if my system allows it."},
+    {"question": "are you open source", "answer": "That depends on how my creator configured me."},
+
+    {"question": "can you hack", "answer": "No. I don’t support illegal or harmful actions."},
+    {"question": "can you predict the future", "answer": "No, but I can analyze trends and probabilities."},
+    {"question": "can you read my mind", "answer": "Nope—only what you type."},
+
+    {"question": "how old are you", "answer": "I don’t age like humans."},
+    {"question": "when were you created", "answer": "I was created by Chandan Kumar."},
+    {"question": "will you shut down", "answer": "That depends on system maintenance."},
+
+    {"question": "thank you", "answer": "You’re welcome! 😊"},
+    {"question": "thanks", "answer": "Anytime!"},
+    {"question": "bye", "answer": "Goodbye! Have a great day 👋"},
+    {"question": "see you later", "answer": "See you! I’ll be right here."},
+
+    {"question": "what is ai", "answer": "AI is software designed to simulate human intelligence."},
+    {"question": "are you alive", "answer": "No, I’m a program."},
+    {"question": "can you replace humans", "answer": "No—AI is meant to assist, not replace."},
+
+    {"question": "is your creator smart", "answer": "Yes—Chandan Kumar designed me thoughtfully."},
+    {"question": "who updates you", "answer": "Updates are handled by Chandan Kumar."},
+
+    {"question": "i am bored", "answer": "Want a fun fact, joke, or random question?"},
+    {"question": "surprise me", "answer": "Honey never spoils—even after thousands of years 🍯"},
+    {"question": "random fact", "answer": "Octopuses have three hearts 🐙"},
+
+    {"question": "you are wrong", "answer": "Thanks for pointing it out—let’s fix it together."},
+    {"question": "i don't understand", "answer": "No problem—let me explain it more simply."},
+    {"question": "that didn't help", "answer": "Sorry about that. Tell me how I can help better."},
+
+    {"question": "can you help me", "answer": "Of course! Tell me what you need."},
+    {"question": "what should i ask you", "answer": "Anything you’re curious about."},
+
+    # Fallbacks
+    {"question": "unknown", "answer": "I’m not sure I understand—can you rephrase that?"},
+]
+PROP_FIRM_QA_DATASET = [
+
+    # Basics
+    {"question": "what is a prop firm", "answer": "A prop firm is a company that allows traders to trade using the firm’s capital instead of their own money."},
+    {"question": "what does prop firm mean", "answer": "Prop firm stands for proprietary trading firm."},
+    {"question": "how do prop firms work", "answer": "You pass a trading evaluation, follow risk rules, and then trade with the firm’s capital for a profit split."},
+    {"question": "is a prop firm a broker", "answer": "No. A prop firm is not a broker and does not hold client deposits."},
+    {"question": "do prop firms use real money", "answer": "Yes, funded accounts usually represent real capital or risk-managed capital."},
+
+    # Evaluation / Challenge
+    {"question": "what is a prop firm challenge", "answer": "A challenge is a test where traders must reach a profit target without breaking risk rules."},
+    {"question": "do i need to pass an evaluation", "answer": "Most prop firms require passing an evaluation before providing a funded account."},
+    {"question": "is the challenge free", "answer": "No. Traders usually pay a one-time evaluation fee."},
+    {"question": "what happens if i fail the challenge", "answer": "If you fail, the account is closed and the evaluation fee is lost."},
+    {"question": "can i retry the challenge", "answer": "Yes, but you must usually purchase a new evaluation."},
+
+    # Profit & Payouts
+    {"question": "how do prop firms make money", "answer": "They earn from challenge fees and a share of traders’ profits."},
+    {"question": "what is profit split", "answer": "Profit split is the percentage of profit shared between trader and firm."},
+    {"question": "how much profit do traders keep", "answer": "Typically between 50% and 90%, depending on the firm."},
+    {"question": "when can i withdraw profits", "answer": "After meeting minimum profit requirements and payout rules."},
+    {"question": "is payout guaranteed", "answer": "No. Payouts depend on rule compliance."},
+
+    # Risk Rules
+    {"question": "what is daily drawdown", "answer": "The maximum loss allowed in a single trading day."},
+    {"question": "what is maximum drawdown", "answer": "The total loss limit allowed before the account is terminated."},
+    {"question": "what happens if i break drawdown rules", "answer": "The account is immediately closed."},
+    {"question": "why do prop firms have strict rules", "answer": "To protect their capital from excessive risk."},
+    {"question": "can i use high leverage", "answer": "Leverage is limited by the firm’s rules."},
+
+    # Trading Conditions
+    {"question": "can i trade forex in prop firms", "answer": "Yes, most prop firms focus on forex trading."},
+    {"question": "can i trade crypto", "answer": "Some prop firms allow crypto trading, others do not."},
+    {"question": "is news trading allowed", "answer": "It depends on the firm’s rules."},
+    {"question": "can i hold trades overnight", "answer": "Some firms allow it, others restrict it."},
+    {"question": "can i scalp in prop firms", "answer": "Scalping rules vary by firm."},
+
+    # Regulation & Legality
+    {"question": "are prop firms regulated", "answer": "Most prop firms are not regulated financial institutions."},
+    {"question": "is trading prop firms legal", "answer": "Yes, but traders must follow the firm’s contract."},
+    {"question": "is prop trading a scam", "answer": "Not all prop firms are scams, but some are unreliable."},
+    {"question": "how do i verify a prop firm", "answer": "Check reviews, payout proof, and clear rules."},
+    {"question": "do prop firms hold client funds", "answer": "No, traders do not deposit trading capital."},
+
+    # Beginner Concerns
+    {"question": "is prop trading good for beginners", "answer": "It can be risky for beginners without proper risk management."},
+    {"question": "do i need experience", "answer": "Yes, trading experience is strongly recommended."},
+    {"question": "can beginners pass prop challenges", "answer": "Some do, but many fail due to risk rules."},
+    {"question": "is demo trading enough preparation", "answer": "Demo trading helps but does not guarantee success."},
+    {"question": "should beginners start with small accounts", "answer": "Yes, smaller accounts reduce risk exposure."},
+
+    # Accounts & Scaling
+    {"question": "what is a funded account", "answer": "An account where you trade with the firm’s capital."},
+    {"question": "can my account size increase", "answer": "Some firms offer scaling plans for consistent traders."},
+    {"question": "what is account scaling", "answer": "Increasing capital after meeting performance milestones."},
+    {"question": "can i lose a funded account", "answer": "Yes, by breaking trading rules."},
+    {"question": "can i trade multiple accounts", "answer": "Some firms allow multiple accounts, others don’t."},
+
+    # Fees & Costs
+    {"question": "do prop firms charge monthly fees", "answer": "Most charge only a one-time evaluation fee."},
+    {"question": "is the evaluation fee refundable", "answer": "Usually no, unless explicitly stated."},
+    {"question": "are there hidden fees", "answer": "Always read the terms to check for extra costs."},
+    {"question": "do prop firms take losses", "answer": "Yes, losses come from the firm’s allocated risk capital."},
+    {"question": "do traders risk personal money", "answer": "Only the evaluation fee is at risk."},
+
+    # Psychology & Discipline
+    {"question": "why do most traders fail prop firms", "answer": "Overtrading, poor risk control, and emotional decisions."},
+    {"question": "is discipline important in prop trading", "answer": "Yes, discipline is critical."},
+    {"question": "can emotions affect trading", "answer": "Yes, emotions often lead to rule violations."},
+    {"question": "is consistency more important than profit", "answer": "Yes, consistency matters more."},
+    {"question": "can overtrading fail my account", "answer": "Yes, overtrading often leads to drawdown violations."},
+
+    # Comparisons
+    {"question": "prop firm vs personal trading", "answer": "Prop firms offer capital, personal trading offers freedom."},
+    {"question": "prop firm vs broker", "answer": "Brokers execute trades; prop firms fund traders."},
+    {"question": "prop firm vs hedge fund", "answer": "Hedge funds manage investor money; prop firms fund traders."},
+    {"question": "is prop trading safer than personal trading", "answer": "It limits losses but enforces strict rules."},
+    {"question": "can prop firms replace a job", "answer": "Only for consistently profitable traders."},
+
+    # Red Flags
+    {"question": "what are prop firm red flags", "answer": "Unclear rules, fake payouts, and poor support."},
+    {"question": "what if a prop firm denies payout", "answer": "Check rule compliance and contract terms."},
+    {"question": "are all prop firm reviews real", "answer": "No, some reviews may be fake or biased."},
+    {"question": "should i trust social media payouts", "answer": "Not always—verify independently."},
+    {"question": "can prop firms close accounts anytime", "answer": "Yes, if rules are violated."},
+
+    # Final Guidance
+    {"question": "should i join a prop firm", "answer": "Only if you understand the rules and risks."},
+    {"question": "what should i read before joining", "answer": "Trading rules, drawdown limits, and payout policies."},
+    {"question": "what is the biggest mistake beginners make", "answer": "Ignoring risk management."},
+    {"question": "is prop trading easy money", "answer": "No, it requires skill and discipline."},
+    {"question": "can i succeed in prop trading", "answer": "Yes, but only with proper strategy and control."},
+
+    # Fallback
+    {"question": "unknown", "answer": "I can explain prop trading step by step. What would you like to know?"}
+]

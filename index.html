@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropFirm Intelligent Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Animation Container -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="white" />
+                <path d="M16 8C11.5817 8 8 11.5817 8 16C8 20.4183 11.5817 24 16 24C20.4183 24 24 20.4183 24 16"
+                    stroke="black" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Challenges</a>
+            <a href="#">How it Works</a>
+            <a href="#">Payouts</a>
+            <a href="#">Trading Rules</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-pill">Client Area ↗</button>
+            <button class="btn-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+            </button>
+            <a href="#" class="create-account">Start Challenge</a>
+        </div>
+    </nav>
+
+    <!-- Main Hero Content -->
+    <main class="hero-section">
+        <!-- Floating decorative nodes -->
+        <div class="node node-left">
+            <div class="node-icon">💰</div>
+            <div class="node-label">Profit Split<br><span>Up to 90%</span></div>
+        </div>
+
+        <div class="node node-right">
+            <div class="node-icon">📈</div>
+            <div class="node-label">Scaling<br><span>$2M+ Plan</span></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="sparkle">✦</span> Get Funded up to $200,000 →
+            </div>
+
+            <h1 class="hero-title">Professional Funding for Serious Traders</h1>
+            <p class="hero-subtitle">Pass our evaluation, get funded, and keep the majority of your profits. No time
+                limits, raw spreads, and instant payouts.</p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">Get Funded ↗</button>
+                <button class="btn-secondary">View Rules</button>
+            </div>
+        </div>
+
+        <div class="hero-footer">
+            <div class="scroll-indicator">
+                <div class="arrow-down">↓</div>
+                Scroll to explore rules
+            </div>
+            <div class="hero-stats">
+                <span>Total Payouts</span>
+                <div class="stat-bars">
+                    <div class="bar active"></div>
+                    <div class="bar active"></div>
+                    <div class="bar"></div>
+                </div>
+                <span style="font-size: 0.8rem; margin-left: 8px;">$15M+ Paid</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Chat Widget -->
+    <div class="chat-container">
+        <div class="chat-messages">
+            <!-- Home Tab Content -->
+            <div class="tab-content" id="home-tab">
+                <div class="home-hero">
+                    <div class="home-hero-logo">
+                        <img src="THE ONLY PROP LOGO--05.jpg.jpeg" alt="The Only Prop Logo" width="48" height="48">
+                    </div>
+                    <div class="home-hero-actions">
+                        <button id="header-reset-btn" class="header-btn" aria-label="Start New Chat" title="Start New Chat">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12C4 16.4183 7.58172 20 12 20C14.1502 20 16.1022 19.1517 17.5678 17.75"
+                                    stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20 12C20 7.58172 16.4183 4 12 4C9.84982 4 7.89777 4.84826 6.43224 6.25" stroke="#1a1a1a"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20 12V8" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4 12V16" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button id="header-close-btn" class="header-btn" aria-label="Close Chat" title="Close Chat">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 6L18 18" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <h2>Hi there,</h2>
+                    <p>How can we help?</p>
+                </div>
+                
+                <div class="home-message-section">
+                    <div class="home-section" onclick="switchToMessages()">
+                        <div>
+                            <div class="section-title">Hi I'm Kylie</div>
+                            <div class="section-subtitle">We typically reply within an hour</div>
+                        </div>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="home-help-section">
+                    <div class="help-search-box">
+                        <div class="help-search-input-wrapper">
+                            <input type="text" placeholder="Search for help" readonly onclick="switchToHelp()" />
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="message-suggestions">
+                            <div class="suggestion-item" onclick="askQuestion('What is a prop firm?')">
+                                <span>What is a prop firm?</span>
+                            </div>
+                            <div class="suggestion-item" onclick="askQuestion('How to take a payout')">
+                                <span>How to take a payout</span>
+                            </div>
+                            <div class="suggestion-item" onclick="askQuestion('Drawdown rules')">
+                                <span>Drawdown rules</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Tab Content -->
+            <div class="tab-content" id="messages-tab" style="display: none;">
+            </div>
+
+            <!-- Help Tab Content -->
+            <div class="tab-content" id="help-tab" style="display: none;">
+                <!-- Search Bar -->
+                <div class="help-search-container">
+                    <div class="help-search-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" id="help-search-input" placeholder="Search for help" />
+                    </div>
+                </div>
+                
+                <!-- Search Results -->
+                <div class="help-search-results" id="help-search-results" style="display: none;"></div>
+                
+                <div class="help-content" id="help-main">
+                    <h3>THE ONLY PROP Knowledge Base</h3>
+                    <p style="color: #888; font-size: 0.9rem; margin-bottom: 20px;">Comprehensive guide to evaluation, trading rules, and operations</p>
+                    <div class="faq-item" onclick="showFaqCategory('evaluation')">
+                        <span>📊 Evaluation Models</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item" onclick="showFaqCategory('drawdown')">
+                        <span>⚠️ Drawdown & Risk Management</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item" onclick="showFaqCategory('trading')">
+                        <span>📈 Trading Rules & Conduct</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item" onclick="showFaqCategory('platforms')">
+                        <span>💻 Trading Platforms & Technology</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item" onclick="showFaqCategory('payouts')">
+                        <span>💰 Payouts & Profit Sharing</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item" onclick="showFaqCategory('compliance')">
+                        <span>✅ Compliance & Verification</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item" onclick="showFaqCategory('operations')">
+                        <span>🔧 Funded Account Operations</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Category View -->
+                <div class="help-category" id="help-category" style="display: none;"></div>
+                
+                <!-- Article View -->
+                <div class="help-article" id="help-article" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div class="chat-input-area" id="chat-input-area" style="display: none;">
+            <div id="attachment-preview" class="attachment-preview"></div>
+            <div class="input-wrapper">
+                <input type="file" id="file-input" multiple accept="*/*" style="display: none;" onchange="handleFileUpload(event)">
+                <button class="input-icon-btn" onclick="document.getElementById('file-input').click()" title="Attach file">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="input-icon-btn" onclick="handleVoiceRecord()" title="Voice message">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <input type="text" placeholder="Type your question..." aria-label="Type your question" maxlength="100">
+                <button class="send-btn" aria-label="Send">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="chat-bottom-nav">
+            <button class="nav-item active" data-tab="home">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Home</span>
+            </button>
+            <button class="nav-item" data-tab="messages">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Messages</span>
+            </button>
+            <button class="nav-item" data-tab="help">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Help</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Launcher Button -->
+    <button id="chat-launcher" class="chat-launcher" aria-label="Open Chat">
+        <div class="launcher-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21 11.5C21.0039 12.8199 20.6957 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0039 9.87812 19.6957 8.7 19.1L3 21L4.9 15.3C4.30426 14.1219 3.99604 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30429 11.1801 2.99607 12.5 3H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="close-icon" style="display: none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </button>
+    <script src="dataset.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+﻿Comprehensive Analysis of the Sharkfunded Proprietary Trading Ecosystem and Evaluation Framework
+The proprietary trading industry has witnessed a paradigm shift in the democratization of institutional-grade capital, with Sharkfunded emerging as a central figure in this transition. This report provides an exhaustive examination of the Sharkfunded ecosystem, as detailed through its operational directives and help center documentation, focusing specifically on the evaluation-based pathways to funding.1 By navigating the complexities of the 1-Step and 2-Step evaluation models, this analysis explores the mechanical, regulatory, and strategic underpinnings that govern the relationship between the firm and its global cohort of traders. The report strictly adheres to the exclusion of instant funding models, providing a dedicated focus on the meritocratic evaluation structure that serves as the cornerstone of Sharkfunded’s capital allocation strategy.
+The Strategic Architecture of Capital Allocation
+The fundamental objective of Sharkfunded is to identify and empower high-performance trading talent by mitigating the liquidity constraints that typically stifle the growth of retail market participants. The firm’s architecture is designed not merely as a funding provider but as a risk-managed environment where professional habits are cultivated and rewarded.1 This environment is governed by a rigorous help center framework that outlines the boundaries of acceptable market conduct, risk tolerance, and technological integration.
+The organizational philosophy posits that by removing personal financial risk, traders can focus on the execution of their strategies with higher psychological clarity. However, this shift of risk to the firm necessitates a comprehensive vetting process. This process is structured through two primary evaluation models, each tailored to different archetypes of traders, from high-frequency day traders to more patient swing traders. The help center serves as the authoritative source for these protocols, ensuring that all participants are aligned with the firm’s operational standards.1
+The Role of Evaluation in Risk Mitigation
+Evaluation is the primary mechanism through which Sharkfunded filters for consistency and discipline. In the proprietary trading context, "consistency" is not merely a buzzword but a statistical requirement for long-term solvency. The evaluation phases act as a stress test, simulating real-market conditions while imposing strict loss limits. These limits are designed to protect the firm’s pool of capital from "tail risk" events—rare but catastrophic market moves that can result from over-leveraged positions or a lack of stop-loss discipline.
+The underlying trend in Sharkfunded's documentation suggests a move toward "Balance-Based" drawdown metrics, which provide a more objective and less volatile benchmark for trader performance compared to "Equity-Based" metrics.1 This distinction is critical for the professional trader, as it dictates how much "breathing room" is available during intraday price fluctuations.
+Detailed Examination of the 2-Step Evaluation Model
+The 2-Step Evaluation represents the gold standard of the Sharkfunded vetting process. It is a two-phased approach designed to verify a trader's skill over an extended period, ensuring that their performance is the result of a robust strategy rather than a sequence of fortunate trades.
+Phase 1: The Initial Assessment
+In Phase 1, the trader is tasked with achieving a specific profit target while adhering to strict daily and total loss limits. This phase is essentially a proof-of-concept for the trader’s methodology. The help center specifies that the profit target for Phase 1 is typically set at 8%, with a maximum daily loss of 5% and a maximum total loss of 10%.1
+The leverage provided in this phase is often as high as 1:100, allowing for significant flexibility in position sizing. However, this high leverage is a "double-edged sword" that requires the trader to exercise extreme caution. The 5% daily loss limit is calculated based on the starting balance of the day, a rule that ensures the trader cannot lose a significant portion of the account in a single session.1
+Phase 2: The Verification Stage
+Upon successful completion of Phase 1, the trader enters the Verification stage. The objectives in Phase 2 are intentionally more conservative, reflecting the firm's desire to see if the trader can maintain their discipline when the pressure of the initial challenge is reduced. The profit target is lowered to 5%, while the drawdown limits remain the same as in Phase 1.1
+This reduction in the profit target is a psychological design choice. It tests whether a trader will become complacent or if they will continue to apply the same rigor that allowed them to pass the first phase. Once Phase 2 is successfully navigated, the trader is eligible for the "Funded" status, where they can begin earning a share of the profits generated in a live-market environment.1
+Metric
+	2-Step Phase 1
+	2-Step Phase 2
+	Profit Target
+	8%
+	5%
+	Max Daily Loss
+	5%
+	5%
+	Max Total Loss
+	10%
+	10%
+	Minimum Trading Days
+	0 Days
+	0 Days
+	Maximum Trading Days
+	Unlimited
+	Unlimited
+	Leverage
+	1:100
+	1:100
+	Analysis of the 1-Step Evaluation Model
+The 1-Step Evaluation is a streamlined alternative designed for experienced traders who wish to bypass the two-phase process. While it offers a faster route to funding, it imposes more stringent risk parameters to compensate for the lack of a second verification stage.1
+Structural Differences and Risk Parameters
+In the 1-Step model, the trader must achieve a 10% profit target. However, the drawdown limits are tighter than the 2-step model: the maximum daily loss is typically 3%, and the maximum total loss is 6%.1 This model utilizes a "Static" total drawdown, meaning the limit does not move as the account grows, providing a fixed floor that the account balance must not touch.
+The 1-step model is particularly favored by traders who utilize strategies with high win rates and low volatility. The lack of a time limit (Unlimited Trading Days) allows the trader to wait for the most high-probability setups, a feature that aligns with institutional-grade trading practices.1
+Metric
+	1-Step Evaluation Specification
+	Profit Target
+	10%
+	Max Daily Loss
+	3% (Balance-based)
+	Max Total Loss
+	6% (Static)
+	Leverage
+	1:50
+	Payout Ratio
+	Up to 90%
+	Account Tiers and Capital Growth Potential
+Sharkfunded provides a variety of account sizes to accommodate the diverse needs of the global trading community. These tiers range from introductory accounts to significant capital allocations, allowing traders to scale their operations as they prove their competence.
+Comparison of Capital Tiers
+The fee structure for these accounts is designed to be accessible, with the evaluation fee acting as a "commitment deposit" that is often refundable upon the first successful payout in the funded phase.1
+Account Size
+	Evaluation Fee (USD)
+	1-Step Target
+	2-Step Phase 1 Target
+	$5,000
+	$49
+	$500
+	$400
+	$10,000
+	$89
+	$1,000
+	$800
+	$25,000
+	$149
+	$2,500
+	$2,000
+	$50,000
+	$289
+	$5,000
+	$4,000
+	$100,000
+	$479
+	$10,000
+	$8,000
+	$200,000
+	$929
+	$20,000
+	$16,000
+	This tiered structure implies a second-order insight: Sharkfunded is building a "talent pipeline." By offering $5,000 accounts, they are capturing emerging talent and providing them with a pathway to managing hundreds of thousands of dollars through the firm’s scaling plan. The scaling plan allows for a 25% increase in the account balance every three months, provided the trader meets the 10% profit threshold and consistency requirements.1
+The Mechanics of Drawdown and Risk Management
+The most frequent cause of account termination in the proprietary trading industry is a violation of drawdown rules. Sharkfunded’s help center provides detailed explanations of how these metrics are calculated to ensure traders can manage their risk effectively.1
+Balance-Based Daily Drawdown
+Sharkfunded utilizes a Daily Loss Limit based on the starting balance of the day. The "day" typically resets at 5:00 PM EST (Server Time). This means that if a trader starts the day with $100,000 and the daily limit is 5%, their account will be breached if the equity or balance drops below $95,000 during that 24-hour period.1
+The formula is expressed as:
+  
+
+A critical nuance is that the daily limit is based on balance, not equity. If a trader has open positions that are in profit, that profit does not increase their daily loss allowance for the following day until the positions are closed and the balance is updated. Conversely, if a trader has floating losses at the time of the daily reset, those losses are factored into the starting balance for the new day, effectively tightening the limit for the next session.1
+Static vs. Trailing Drawdown
+Sharkfunded's use of a "Static" maximum total drawdown is a significant advantage for the trader. In a trailing drawdown model, the floor moves up as the trader's equity increases, which can "trap" a trader's profits and make it difficult to manage larger positions. In Sharkfunded’s static model, the floor remains fixed at the initial percentage of the starting balance.1
+For example, on a $100,000 account with a 10% static drawdown, the floor is $90,000. If the trader grows the account to $110,000, they now have a $20,000 buffer before they breach the account ($110,000 - $90,000). This provides a "safety cushion" that rewards profitable traders and allows them to withstand occasional periods of market volatility without losing their funded status.1
+Trading Rules and Market Conduct
+To maintain the integrity of its capital and its relationship with liquidity providers, Sharkfunded enforces a set of rules regarding trading styles and behaviors. These rules are designed to distinguish between professional trading and "gambling" or "system gaming".1
+News Trading Restrictions
+While news trading is often permitted during the evaluation phases, it is subject to specific restrictions in the Funded phase. High-impact news events (often referred to as "Red Folder" events) can cause extreme slippage and "gapping" in the markets, where the price jumps from one level to another without executing orders in between.
+Sharkfunded typically restricts opening or closing trades within a 2-minute window surrounding these events for funded accounts.1 This restriction protects the firm from "toxic flow"—trades that exploit the temporary lack of liquidity during news releases. However, trades that were opened well before the news event and remain open through the event are usually permitted, provided they have a stop-loss in place.
+Consistency and Position Sizing
+Sharkfunded emphasizes "lot size consistency." This means a trader should not drastically change their position size to "gamble" on a single trade to hit a target. For example, if a trader typically trades 1.0 lot on EUR/USD, suddenly opening a 50.0 lot position would be flagged as a consistency violation.1
+This rule serves a dual purpose. First, it ensures that the trader's success is repeatable and not the result of a single "lucky" trade. Second, it protects the firm from "concentration risk," where a single oversized position could cause a breach of the firm's aggregate risk limits with its liquidity providers.
+Prohibited Strategies
+Sharkfunded explicitly prohibits several strategies that exploit platform mechanics rather than market movements:
+* Latency Arbitrage: Using high-speed data feeds to trade against slower price quotes on the platform.
+* HFT (High-Frequency Trading): Using bots to execute hundreds of trades in seconds, which can overwhelm the platform and does not reflect real-market participation.
+* Copy Trading Other Users: While a trader can copy their own trades from an external account, copying the trades of another Sharkfunded user is prohibited to prevent "herd behavior" that could create systemic risk for the firm.1
+* Reverse Trading/Hedging Between Accounts: Opening a long position on one account and a short position on another to guarantee that one account passes the evaluation while the other fails. This is considered a violation of the spirit of the evaluation.
+Technological Infrastructure: Platforms and Execution
+The technical foundation of Sharkfunded has evolved to provide a stable and high-performance environment for its traders. The help center outlines the transition to a diverse set of platforms to ensure operational continuity.1
+Platform Options: DXTrade, cTrader, and Match-Trader
+Sharkfunded primarily utilizes DXTrade and Match-Trader as its flagship platforms, with cTrader available in certain configurations.
+* DXTrade: This is a versatile, web-based platform that has become an industry favorite following the licensing challenges faced by legacy platforms like MetaTrader. It offers a sophisticated charting package, integrated economic calendars, and a highly intuitive interface for managing multiple positions.
+* Match-Trader: Known for its "mobile-first" approach, Match-Trader provides a seamless transition between desktop and mobile trading. It is particularly valued for its execution speed and the "proprietary" feel of its user interface.1
+* cTrader: Often considered the choice for "purist" traders, cTrader offers Level II pricing (depth of market), which allows traders to see the liquidity available at different price levels. This is essential for large-volume traders who need to manage slippage.1
+Execution Environment and Spreads
+Sharkfunded provides "Raw Spreads" through its liquidity providers. In a raw spread environment, the spread on major pairs like EUR/USD can be as low as 0.0 pips during high-liquidity sessions (London/New York overlap). To compensate the firm and the broker, a commission is charged per lot traded.
+Asset Class
+	Typical Spread
+	Commission
+	Leverage
+	Forex Majors
+	0.0 - 0.5 pips
+	$7 per lot
+	1:100
+	Gold (XAUUSD)
+	10 - 20 cents
+	$7 per lot
+	1:20
+	Indices (NAS100)
+	1.0 - 2.0 points
+	$0 per lot
+	1:20
+	Crypto (BTCUSD)
+	Variable
+	$0 per lot
+	1:2
+	The lower leverage on Gold, Indices, and Crypto is a deliberate risk management choice. These assets are significantly more volatile than Forex, and lower leverage prevents a trader from being wiped out by a small percentage move in the underlying asset.1
+Financial Operations: Payouts, Splits, and Scaling
+The ultimate goal for any trader in the Sharkfunded ecosystem is to reach the payout stage. The help center provides a clear roadmap for how profits are distributed and how accounts are scaled over time.1
+Profit Sharing and Payout Frequency
+Sharkfunded offers a standard profit split of 80%, which can be increased to 90% through performance or specific account add-ons purchased at checkout. This split is among the most competitive in the industry, ensuring that the majority of the value created by the trader is retained by the trader.1
+Payouts are typically processed on a bi-weekly (14-day) cycle. To be eligible for a payout, the trader must:
+1. Have a funded account that is in a net profit position.
+2. Have closed all active trades at the time of the payout request.
+3. Have not violated any trading rules during the payout period.
+The Scaling Plan: Institutional Growth
+Sharkfunded’s scaling plan is designed to turn successful retail traders into institutional-scale fund managers. The plan is structured as follows:
+* Criteria: The trader must achieve a total profit of 10% or more over a consecutive three-month period.
+* Requirement: The trader must have successfully received at least two payouts during this period.
+* Reward: Sharkfunded will increase the initial account balance by 25%.
+This scaling can continue until the trader is managing a total of $4,000,000. For example, a $200,000 account would scale as follows:
+* 3 Months: $250,000
+* 6 Months: $312,500
+* 9 Months: $390,625
+* 12 Months: $488,281
+This geometric growth potential provides a massive incentive for traders to adopt a long-term, low-risk approach rather than attempting to "get rich quick" through over-leveraging.1
+Compliance, Verification, and Legal Framework
+As a global entity, Sharkfunded operates within a strict framework of Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations. This ensures the safety of the firm's capital and its compliance with international financial standards.1
+The Onboarding and KYC Process
+Once a trader passes an evaluation, they are not immediately given a funded account. They must first undergo a verification process. This involves:
+* Identity Verification: Submission of a government-issued ID (Passport, Driver’s License).
+* Proof of Residence: A utility bill or bank statement showing a current address.
+* Contractor Agreement: The trader must sign a professional services agreement that outlines their status as an independent contractor for the firm.1
+This process is typically completed within 24 to 72 hours. Sharkfunded uses automated systems to cross-reference these documents against global sanction lists, ensuring that they do not facilitate trading for individuals in restricted jurisdictions.1
+Restricted Countries and Jurisdictions
+Due to the complex and ever-changing landscape of international financial regulations, Sharkfunded cannot offer services to residents of certain countries. These typically include countries under OFAC sanctions (e.g., North Korea, Iran, Syria) and jurisdictions with specific local bans on proprietary trading models. It is the trader's responsibility to ensure that they are legally permitted to trade in their home country.1
+Second-Order Insights: The Symbiosis of Firm and Trader
+Beyond the technical rules, a deeper analysis of the Sharkfunded help center reveals a sophisticated symbiotic relationship. The firm is not merely a "counterparty" to the trader; it is a partner that thrives when its traders thrive.
+The "Data Play" and Market Sentiment
+A significant second-order insight is the value of the aggregate data generated by Sharkfunded's traders. By monitoring thousands of accounts, Sharkfunded gains a unique insight into retail market sentiment. While the firm provides capital to individual traders, the collective "intelligence" of the profitable cohort allows the firm to hedge its own risk in the underlying markets more effectively. This "meta-strategy" is what allows prop firms to offer such high profit splits to their participants.1
+Psychological Engineering in Rule Sets
+The specific combination of profit targets and drawdown limits is a form of psychological engineering. By setting a 10% target with a 6% drawdown (in the 1-step model), Sharkfunded is filtering for traders who have a high "Expectancy." A trader with a low-probability, high-reward strategy will likely hit the drawdown limit before the profit target, whereas a trader with a high-probability, consistent strategy will eventually reach the target through the "law of large numbers".1
+Third-Order Insights: The Macro Future of Proprietary Trading
+The Sharkfunded model represents a broader trend in the "financialization of skill." In the 20th century, accessing large amounts of capital required a formal education and a position at a major investment bank. In the 21st century, the "Sharkfunded model" suggests that capital will increasingly flow toward documented performance, regardless of the individual's pedigree.1
+The Disruption of Traditional Banking
+As prop firms like Sharkfunded grow, they are beginning to compete with traditional retail banks for "investment-minded" customers. Instead of putting money into a low-yield savings account or a high-fee mutual fund, individuals are increasingly using their capital to "purchase" an evaluation, effectively "betting on themselves" to manage a larger pool of capital. This shift has profound implications for the future of retail finance and personal wealth management.1
+Technological Resistance and Decentralization
+The firm's move toward platforms like DXTrade and Match-Trader is a response to the "centralization risk" of the MetaTrader ecosystem. This indicates a future where proprietary trading is "platform-agnostic," using a decentralized array of brokers and technology providers to ensure that no single regulatory or technical failure can shut down the industry. Sharkfunded is at the forefront of this movement, building a resilient infrastructure that can adapt to the shifting sands of the global financial regulatory environment.1
+Operational Guidelines for Funded Traders
+Once a trader achieves funded status, the help center shifts its focus from "passing the test" to "maintaining the business." A funded account is a professional asset that must be managed with care.1
+Account Maintenance and Inactivity
+A common question addressed in the help center is the "Inactivity Rule." Sharkfunded requires funded traders to be active participants in the market. If an account remains inactive (no trades placed) for more than 30 days, the account may be suspended or terminated. This ensures that the firm's capital is being utilized and is not sitting idle while other talented traders could be using it.1
+The "Buffer" and Withdrawal Strategy
+A critical strategy for funded traders is the creation of an "equity buffer." Since the drawdown limit is static based on the initial balance, many professional traders choose not to withdraw 100% of their profit split immediately. By leaving a portion of their profits in the account, they increase the distance between their current balance and the drawdown floor, effectively lowering their risk of a breach during a future losing streak.1
+Strategy
+	Action
+	Result
+	Aggressive
+	Withdraw all profits bi-weekly
+	Maximum cash flow, minimum safety buffer.
+	Balanced
+	Withdraw 70%, leave 30%
+	Moderate cash flow, growing safety buffer.
+	Conservative
+	Leave profits until 5% buffer is built
+	Delayed cash flow, significant account protection.
+	Troubleshooting and Technical Support
+The Sharkfunded help center is not just a rulebook; it is a support system. The firm provides 24/7 technical assistance to ensure that traders are not penalized for technical glitches beyond their control.1
+Dealing with Slippage and Latency
+The help center provides a realistic view of market execution, acknowledging that slippage can occur during periods of high volatility. Slippage is the difference between the expected price of a trade and the price at which the trade is actually executed. Sharkfunded explains that because they use "Market Execution," slippage is a natural part of trading and is not a "manipulation" by the firm.1
+To mitigate this, the firm recommends:
+* Using "Limit Orders" instead of "Market Orders" where possible.
+* Avoiding trading during the "Rollover" period (5:00 PM EST), when liquidity is thinnest and spreads are widest.
+* Ensuring a stable internet connection or using a VPS (Virtual Private Server) to reduce latency between the trader's computer and the platform's server.1
+Account Breaches and Reset Options
+If a trader does violate a rule (a "Hard Breach"), the account is permanently disabled. However, Sharkfunded offers a "Reset" or "Retake" discount for traders who have failed an evaluation but wish to try again. This recognizes that failure is often part of the learning process for professional traders.1
+A "Soft Breach" (such as forgetting to close a trade before the weekend on an account type that doesn't allow it) may result in the trade being closed by the system without the account being lost, although this depends on the specific account terms outlined in the help center.1
+Ethical Standards and Community Conduct
+Finally, the Sharkfunded ecosystem is built on a foundation of professional ethics. The help center outlines a "Code of Conduct" for its Discord community and social media interactions. Traders are expected to maintain a level of decorum and professional courtesy. Toxic behavior, the spread of "FUD" (Fear, Uncertainty, and Doubt), or attempts to scam other members of the community are grounds for immediate expulsion from the program.1
+This emphasis on community serves a strategic purpose. A healthy, supportive community of traders provides a "feedback loop" where members help each other improve, ultimately leading to a more profitable cohort of traders for the firm.
+Conclusion: The Integrated Sharkfunded Path
+The Sharkfunded proprietary trading framework is a comprehensive, merit-based system designed for the modern financial era. By providing a clear and transparent set of rules through its help center, the firm has created a roadmap for retail traders to transition into professional capital managers.1
+The key to success in this ecosystem lies in a deep understanding of the mechanics of drawdown, the discipline of consistent position sizing, and the ability to adapt to a high-performance technological environment. Whether through the 2-Step Verification or the 1-Step Evaluation, Sharkfunded offers a pathway that balances risk and reward, rewarding the patient and disciplined trader while filtering for the "noise" of the retail markets.
+As the industry continues to evolve, Sharkfunded’s commitment to transparency, technological resilience, and the professionalization of the retail trader positions it as a leader in the global "prop tech" space. For the trader who treats this opportunity as a business rather than a game, the potential for capital growth and financial independence within the Sharkfunded ecosystem is virtually unparalleled.1 This analysis confirms that the firm's evaluation models—devoid of the shortcuts found in instant models—remain the most robust vehicle for identifying and sustaining true trading excellence in the 21st-century markets.
+Works cited
+1. accessed January 1, 1970, https://intercom.help/sharkfunded/en
